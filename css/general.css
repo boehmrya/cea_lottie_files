@@ -1,0 +1,113 @@
+
+body {
+  background-color: #eff0f1;
+  color: #343F49;
+  font-family: "neuzeit-grotesk",sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #343f49;
+    font-family: neuzeit-grotesk,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -.2px;
+  line-height: 2.875rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+.page-section-intro__title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.page-section-intro__subtitle {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  letter-spacing: normal;
+  font-weight: 300;
+  color: #00587c;
+  margin-top: 11px;
+  margin-bottom: 0;
+}
+
+.page-section-intro__text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 22px;
+}
+
+.two-columns__button {
+  margin-top: 34px;
+}
+
+.standard-button__link {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  padding: 11px 22px;
+  display: inline-block;
+  text-align: center;
+  min-width: 180px;
+}
+
+.standard-button__link--no-reverse {
+  color: #fff;
+  background-color: #006ba6;
+}
+
+.standard-button__link--no-reverse:focus,
+.standard-button__link--no-reverse:hover {
+  color: #fff;
+  background-color: #84329b;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 22px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .container {
+    width: 1120px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    width: 1170px;
+  }
+}

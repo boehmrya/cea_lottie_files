@@ -1,0 +1,152 @@
+
+.bb-marketplace {
+  margin-top: 22px;
+}
+
+@media (min-width: 992px) {
+  .bb-marketplace {
+    display: flex;
+  }
+}
+
+.bb-marketplace__text-col {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 992px) {
+  .bb-marketplace__text-col {
+    flex: 0 0 auto;
+    width: 50%;
+    max-width: 400px;
+    padding-right: 45px;
+  }
+}
+
+.bb-marketplace__text-col p:last-child {
+  margin-bottom: 0;
+}
+
+.bb-marketplace__chart-col {
+  margin-top: 22px;
+}
+
+@media (min-width: 992px) {
+  .bb-marketplace__chart-col {
+    flex: 1 1 auto;
+    margin-top: 0;
+  }
+}
+
+
+.bb-marketplace__chart-header {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #00587c;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.bb-marketplace__chart {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+  margin-left: -11px;
+  margin-right: -11px;
+}
+
+@media (max-width: 499px) {
+  .bb-marketplace__chart {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+}
+
+.bb-marketplace__chart-bar-section {
+  padding-left: 11px;
+  padding-right: 11px;
+  width: 50%;
+}
+
+@media (max-width: 499px) {
+  .bb-marketplace__chart-bar-section {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.bb-marketplace__chart-bar-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 250px;
+}
+
+.bb-marketplace__chart-bar {
+  width: 50%;
+  max-width: 150px;
+}
+
+.bb-marketplace__chart-bar--purple {
+  background-color: #84329B;
+}
+
+.bb-marketplace__chart-bar--green {
+  background-color: #007482;
+}
+
+.bb-marketplace__chart-bar-num {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px 2px;
+}
+
+@media (max-width: 499px) {
+  .bb-marketplace__chart-bar-num {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (max-width: 349px) {
+  .bb-marketplace__chart-bar-num {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+.bb-marketplace__chart-bar-label {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.bb-marketplace__chart-key {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.bb-marketplace__chart-key-item {
+  display: flex;
+  padding: 0px 11px;
+}
+
+.bb-marketplace__chart-key-color {
+  width: 15px;
+  margin-right: 3px;
+}
+
+.bb-marketplace__chart-key-color--purple {
+  background-color: #84329B;
+}
+
+.bb-marketplace__chart-key-color--green {
+  background-color: #007482;
+}

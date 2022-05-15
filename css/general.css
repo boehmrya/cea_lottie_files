@@ -26,6 +26,12 @@ a {
 
 p {
   margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
 }
 
 .page-section-intro__title {

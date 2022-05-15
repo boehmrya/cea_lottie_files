@@ -30,6 +30,12 @@
   padding: 0px 45px;
 }
 
+@media (max-width: 1199px) {
+  .cea-industry-impact__col {
+    padding: 0px 22px;
+  }
+}
+
 .cea-industry-impact__col-inner  {
   min-width: 230px
 }
@@ -58,9 +64,9 @@
 
 .cea-industry-impact__graphic-description--upper-right {
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 0;
-  max-width: 200px;
+  max-width: 170px;
   z-index: 1;
 }
 

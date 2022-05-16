@@ -20,10 +20,48 @@
   margin-bottom: 0;
 }
 
+.cea-industry-impact__row-wrap {
+  margin-top: 45px;
+}
+
 .cea-industry-impact__row {
   display: flex;
   justify-content: space-between;
-  margin-top: 45px;
+}
+
+/*
+.cea-industry-impact__row:after {
+  content: 'flickity';
+  display: none;
+}
+
+@media screen and ( min-width: 992px ) {
+  .cea-industry-impact__row:after {
+    content: '';
+  }
+}
+*/
+
+@media (max-width: 991px) {
+  .cea-industry-impact__row {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -22px;
+    margin-bottom: -22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cea-industry-impact__row {
+    margin-top: -11px;
+    margin-bottom: -11px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cea-industry-impact__section--investing   .cea-industry-impact__row {
+    justify-content: flex-start;
+  }
 }
 
 .cea-industry-impact__col {
@@ -36,8 +74,63 @@
   }
 }
 
-.cea-industry-impact__col-inner  {
-  min-width: 230px
+@media (max-width: 991px) {
+  .cea-industry-impact__col {
+    padding: 22px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .cea-industry-impact__section--connecting .cea-industry-impact__col {
+    width: 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  .cea-industry-impact__section--investing .cea-industry-impact__col {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .cea-industry-impact__section--investing .cea-industry-impact__col {
+    width: 100%;
+  }
+
+  .cea-industry-impact__section--investing .cea-industry-impact__col:last-child {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 991px) {
+  .cea-industry-impact__section--economic-impact .cea-industry-impact__col {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .cea-industry-impact__col {
+    padding: 11px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cea-industry-impact__section--economic-impact .cea-industry-impact__col:last-child {
+    margin-top: 22px;
+  }
+}
+
+.flickity-enabled .cea-industry-impact__col {
+  width: 100%;
+  margin-right: 22px;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .cea-industry-impact__col-inner  {
+    min-width: 230px
+  }
 }
 
 .cea-industry-impact__col-inner--vertical {
@@ -70,8 +163,20 @@
   z-index: 1;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .cea-industry-impact__graphic-description--upper-right {
+    right: 80px;
+  }
+}
+
 .cea-industry-impact__graphic {
   height: 210px;
+}
+
+@media (max-width: 991px) {
+  .cea-industry-impact__section--economic-impact .cea-industry-impact__graphic {
+    height: auto;
+  }
 }
 
 .cea-industry-impact__graphic--roll-left {
@@ -79,11 +184,17 @@
   position: relative;
 }
 
-.cea-industry-impact__col-inner--vertical .cea-industry-impact__graphic {
+.cea-industry-impact__graphic--align-top {
   margin-bottom: 22px;
 }
 
-.cea-industry-impact__col-inner--horizontal .cea-industry-impact__graphic {
+@media (max-width: 991px) {
+  .cea-industry-impact__graphic--align-top {
+    margin-bottom: 11px;
+  }
+}
+
+.cea-industry-impact__graphic--align-left {
   margin-right: 34px;
 }
 
@@ -115,7 +226,7 @@
   margin-right: 11px;
 }
 
-.cea-industry-impact__graphic-text-wrap--stat-vertical .cea-industry-impact__graphic-stat {
+.cea-industry-impact__graphic-stat--top {
   margin-bottom: 5px;
 }
 
@@ -123,4 +234,8 @@
   font-size: 0.9rem;
   opacity: 0.7;
   margin-top: 11px;
+}
+
+.flickity-page-dots .dot {
+  background: #fff;
 }

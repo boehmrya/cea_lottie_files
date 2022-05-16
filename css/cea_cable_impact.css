@@ -5,9 +5,22 @@
   border-top: 1px solid #fff;
 }
 
+@media (max-width: 499px) {
+  .cea-industry-impact__section {
+    margin-top: 34px;
+    padding-top: 34px;
+  }
+}
+
 .cea-industry-impact__section:last-child {
   padding-bottom: 45px;
   border-bottom: 1px solid #fff;
+}
+
+@media (max-width: 499px) {
+  .cea-industry-impact__section:last-child {
+    padding-bottom: 34px;
+  }
 }
 
 .cea-industry-impact__header {
@@ -24,35 +37,20 @@
   margin-top: 45px;
 }
 
+@media (max-width: 499px) {
+  .cea-industry-impact__row-wrap {
+    margin-top: 34px;
+  }
+}
+
 .cea-industry-impact__row {
   display: flex;
   justify-content: space-between;
 }
 
-/*
-.cea-industry-impact__row:after {
-  content: 'flickity';
-  display: none;
-}
-
-@media screen and ( min-width: 992px ) {
-  .cea-industry-impact__row:after {
-    content: '';
-  }
-}
-*/
-
 @media (max-width: 991px) {
   .cea-industry-impact__row {
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: -22px;
-    margin-bottom: -22px;
-  }
-}
-
-@media (max-width: 767px) {
-  .cea-industry-impact__row {
     margin-top: -11px;
     margin-bottom: -11px;
   }
@@ -65,25 +63,24 @@
 }
 
 .cea-industry-impact__col {
-  padding: 0px 45px;
+  padding: 11px 0px;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 500px) {
+  .cea-industry-impact__col {
+    padding: 11px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
   .cea-industry-impact__col {
     padding: 0px 22px;
   }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 1200px) {
   .cea-industry-impact__col {
-    padding: 22px;
-    width: 100%;
-  }
-}
-
-@media (max-width: 991px) {
-  .cea-industry-impact__section--connecting .cea-industry-impact__col {
-    width: 50%;
+    padding: 0px 45px;
   }
 }
 
@@ -93,7 +90,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .cea-industry-impact__section--investing .cea-industry-impact__col {
     width: 100%;
   }
@@ -103,28 +100,10 @@
   }
 }
 
-@media (max-width: 991px) {
-  .cea-industry-impact__section--economic-impact .cea-industry-impact__col {
-    width: 80%;
-  }
-}
-
-@media (max-width: 767px) {
-  .cea-industry-impact__col {
-    padding: 11px;
-  }
-}
-
 @media (max-width: 767px) {
   .cea-industry-impact__section--economic-impact .cea-industry-impact__col:last-child {
     margin-top: 22px;
   }
-}
-
-.flickity-enabled .cea-industry-impact__col {
-  width: 100%;
-  margin-right: 22px;
-  padding: 0;
 }
 
 @media (min-width: 992px) {
@@ -138,6 +117,14 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+}
+
+@media (min-width: 500px) and (max-width: 991px) {
+  .cea-industry-impact__col-inner--vertical {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .cea-industry-impact__col-inner--horizontal {
@@ -158,25 +145,28 @@
 .cea-industry-impact__graphic-description--upper-right {
   position: absolute;
   top: 20px;
-  right: 0;
+  right: 5px;
   max-width: 170px;
   z-index: 1;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 499px) {
   .cea-industry-impact__graphic-description--upper-right {
-    right: 80px;
+    position: static;
+    max-width: 300px;
   }
 }
 
-.cea-industry-impact__graphic {
-  height: 210px;
+
+@media (min-width: 992px) {
+  .cea-industry-impact__graphic {
+    height: 210px;
+  }
 }
 
-@media (max-width: 991px) {
-  .cea-industry-impact__section--economic-impact .cea-industry-impact__graphic {
-    height: auto;
-  }
+.cea-industry-impact__col--gigabit-speeds .cea-industry-impact__graphic {
+  padding-left: 11px;
+  padding-right: 11px;
 }
 
 .cea-industry-impact__graphic--roll-left {
@@ -184,13 +174,28 @@
   position: relative;
 }
 
-.cea-industry-impact__graphic--align-top {
-  margin-bottom: 22px;
+@media (max-width: 499px) {
+  .cea-industry-impact__graphic--roll-left {
+    margin-bottom: 5px;
+  }
 }
 
-@media (max-width: 991px) {
+.cea-industry-impact__graphic--align-top {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 992px) {
   .cea-industry-impact__graphic--align-top {
-    margin-bottom: 11px;
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 991px) {
+  .cea-industry-impact__graphic--align-top {
+    margin-right: 34px;
+    margin-bottom: 0;
+    height: auto;
+    width: 250px;
   }
 }
 
@@ -198,10 +203,33 @@
   margin-right: 34px;
 }
 
+@media (max-width: 991px) {
+  .cea-industry-impact__graphic--align-left {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 499px) {
+  .cea-industry-impact__col--infrastructure-investment .cea-industry-impact__graphic--align-left {
+    max-width: 125px;
+    margin-right: 11px;
+  }
+}
+
+.cea-industry-impact__col--infrastructure-investment .cea-industry-impact__graphic-text--lines-split {
+
+}
+
 .cea-industry-impact__graphic-text {
   font-size: 1.125rem;
   line-height: 1.25rem;
   max-width: 300px;
+}
+
+@media (max-width: 499px) {
+  .cea-industry-impact__graphic-text {
+    max-width: none;
+  }
 }
 
 .cea-industry-impact__graphic-text--lines-split {
@@ -212,8 +240,25 @@
   margin-top: 11px;
 }
 
+@media (max-width: 499px) {
+  .cea-industry-impact__graphic-text--lines-split {
+    margin-top: 0;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+  .cea-industry-impact__graphic-text--lines-split .cea-industry-impact__graphic-text-line {
+    margin-top: 11px;
+  }
+}
+
 .cea-industry-impact__graphic-text-wrap--stat-horizontal {
   display: flex;
+}
+
+@media (max-width: 991px) {
+  .cea-industry-impact__graphic-text-wrap--stat-horizontal {
+    display: block;
+  }
 }
 
 .cea-industry-impact__graphic-stat {
@@ -224,6 +269,19 @@
 
 .cea-industry-impact__graphic-text-wrap--stat-horizontal .cea-industry-impact__graphic-stat {
   margin-right: 11px;
+}
+
+@media (max-width: 991px) {
+  .cea-industry-impact__graphic-text-wrap--stat-horizontal .cea-industry-impact__graphic-stat {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 499px) {
+  .cea-industry-impact__graphic-text-wrap--stat-vertical .cea-industry-impact__graphic-stat {
+    margin-bottom: 5px;
+  }
 }
 
 .cea-industry-impact__graphic-stat--top {

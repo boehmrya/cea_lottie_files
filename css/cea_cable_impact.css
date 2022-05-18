@@ -157,12 +157,13 @@
   }
 }
 
-
+/*
 @media (min-width: 992px) {
   .cea-industry-impact__graphic {
     height: 210px;
   }
 }
+*/
 
 .cea-industry-impact__col--gigabit-speeds .cea-industry-impact__graphic {
   padding-left: 11px;
@@ -296,4 +297,20 @@
 
 .flickity-page-dots .dot {
   background: #fff;
+}
+
+.lottie-wrap {
+  height: 200px;
+}
+
+@media (min-width: 992px) {
+  .cea-industry-impact__col--cable-employees .lottie-wrap {
+    height: 250px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cea-industry-impact__col--cable-jobs .lottie-wrap {
+    height: 215px;
+  }
 }
